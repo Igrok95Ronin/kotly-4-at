@@ -1,0 +1,55 @@
+.operator {
+    padding: 35px 0 35px;
+}
+.operator__box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: linear-gradient( 150deg , $mainColor 80%, #fff 20%);
+
+}
+.operator__left {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.operator__txt {
+    color: #fff;
+}
+.operator__btnW {
+}
+.operator__btn {
+    color: #fff;
+    background-color: $btnColor;
+    padding: 10px 10px 10px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    span{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/ok4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &:hover{
+        color: #fff;
+    }
+}
+.operator__right {
+}
+.operator__img {
+    width: 200px;
+    height: 100%;
+}
