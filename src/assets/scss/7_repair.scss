@@ -1,0 +1,94 @@
+.repair {
+    padding: 10px 0 35px;
+}
+.repair__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.repair__left {
+}
+.repair__imgW {
+    padding: 0 50px;
+}
+.repair__img {
+    width: 100%;
+    height: 100%;
+}
+.repair__title {
+    font-weight: 700;
+    text-align: center;
+    padding-left: 35px;
+    span{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/31.png);
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.repair__right {
+}
+.repair__wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+.repair__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.repair__inner--imgW {
+}
+.repair__inner--img {
+    width: 100%;
+    height: 100%;
+}
+.repair__inner--name {
+    font-weight: 700;
+}
+.repair__txt {
+    line-height: 26px;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+.repair__bottom {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+.repair__btnW {
+}
+.repair__btn {
+    @include btn;
+    border-radius: 0 10px 10px 0;
+}
+.repair__btnMW {
+}
+.repair__btnM {
+    @include btn;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/ok21.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        left: 5px;
+    }
+}
