@@ -1,0 +1,92 @@
+.thermalExchange {
+    padding: 0 0 35px;
+}
+.thermalExchange__title {
+    @include h2Title;
+}
+.thermalExchange__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+.thermalExchange__left {
+    outline: auto;
+    margin: 0 50px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/21.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 80px;
+        left: -20px;
+        top: -20px;
+    }
+}
+.thermalExchange__imgW {
+}
+.thermalExchange__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.thermalExchange__wrapper {
+    background-color: #ececec;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 5px;
+}
+.thermalExchange__inner {
+}
+.thermalExchange__price {
+    font-weight: 700;
+    text-decoration:line-through;
+}
+.thermalExchange__price2 {
+    color: #1b4183;
+    font-weight: 700;
+    font-size: 20px;
+}
+.thermalExchange__btnMW {
+}
+.thermalExchange__btnM {
+    background-color: #1b4183;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    &:hover{
+        color: #fff;
+    }
+}
+.thermalExchange__right {
+}
+.thermalExchange__txt {
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url("../img/ok6.png");
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        left: 0;
+        top: -10px;
+    }
+}
+.thermalExchange__btnMW2 {
+    text-align: center;
+    margin-top: 30px;
+}
+.thermalExchange__btnM2 {
+    @include btn;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
